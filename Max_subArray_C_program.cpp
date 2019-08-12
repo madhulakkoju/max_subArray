@@ -7,14 +7,14 @@ int main()
 int n;
 cout << "Enter the number of array elements :";
 cin >> n;
-int arr[n];
+int arr[n],check[3][10];
 cout << "Enter the array elements:" << endl;
-for(int i=0,i<n;i++)
+for(int i=0;i<n;i++)
 {
 cin >> arr[i];
 } 
 int past=0,x,y;
-for(int i=0,i<n;i++)
+for(int i=0;i<n;i++)
 {
 x = arr[i];
 if(past < 0 && x < 0)
