@@ -1,13 +1,24 @@
 #include<iostream>
 using namespace std;
-
-
+// the question to this is in file READ ME.
+// in this program, only arrays are used. 
+// we can make use of structures to make it even more simpler and lighter code.
+// here, pointers can be used to reduce the space used by the program with check array.
+// this program can help beginners to implement their idea with very very basic knowledge. without any higher datastructues.
+/*
+LOGIC:
+we take the array elements to the array arr. then we read all the elements from the beginning to the end and check whether it is non-negative held do the following::
+if it is non-negative v add it to the check array.
+and initialise the other parts of check array with the initial position of the first element of the subarray.
+if it is negative we are going to terminate it and continue with the next coming subarray in the same way as in the above statement.
+finally, we sort the check array according to the given conditions and continue with the the subarray which is pointed by the first part of check array.
+*/
 int main()
 {
 int n;
 cout << "Enter the number of array elements :";
 cin >> n;
-int arr[n],check[3][10],z=0;
+int arr[n],check[3][10]={0},z=0;
 cout << "Enter the array elements:" << endl;
 for(int i=0;i<n;i++)
 {
